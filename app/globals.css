@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fbf8f3;
+  --foreground: #1c1917;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Léger grain / texture papier pour l'ambiance nostalgie */
+.paper-texture {
+  background-image: radial-gradient(
+    rgba(120, 90, 50, 0.04) 1px,
+    transparent 1px
+  );
+  background-size: 4px 4px;
+}
